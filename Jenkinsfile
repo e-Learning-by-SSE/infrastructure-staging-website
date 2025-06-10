@@ -1,3 +1,4 @@
+@Library('web-service-helper-lib') _
 pipeline {
     agent any
 
