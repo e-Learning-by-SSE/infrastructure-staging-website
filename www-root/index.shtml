@@ -1,54 +1,89 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html
+<!DOCTYPE html>
+<html lang="de">
   <head>
+    <meta charset="UTF-8" />
     <title>SSE Staging-Server</title>
-    <link rel="icon" type="image/x-icon" href="/SSE_graphic.png">
+    <link rel="icon" type="image/x-icon" href="/SSE_graphic.png" />
+    <style>
+      body {
+        font-family: sans-serif;
+        line-height: 1.6;
+        margin: 2rem;
+      }
+      h1 {
+        color: #2b4d3f;
+      }
+      h2 {
+        margin-top: 2rem;
+      }
+      ul {
+        list-style-type: none;
+        padding-left: 0;
+      }
+      li {
+        margin-bottom: 0.5rem;
+      }
+      li ul {
+        padding-left: 1.5rem;
+        list-style-type: disc;
+      }
+    </style>
   </head>
   <body>
-    <h1>SSE Staging Server für Webbasierte Dienste von SSE</h1>
-    <!-- <a href="https://student-management-system.github.io/">Dokumentation der Architektur und Repositories</a> -->
-    <h3>Self-Learn / SEARCH</h3>
+    <h1>SSE Staging Server für webbasierte Dienste</h1>
+
+    <!-- Self-Learn / SEARCH -->
+    <h2>Self-Learn / SEARCH</h2>
     <ul>
-      <li><a href="https://staging.sse.uni-hildesheim.de/selflearn">Self-Learning Demo-System</a></li>
-      <ul>
-        <li><a href="https://staging.sse.uni-hildesheim.de/demodiary">Lerntagebuch Demo</a></li>
-        <li><a href="http://147.172.178.30:1001/login">MinIO Console (Nur aus SSE-Netz)</a></li>
-        <li><a href="http://147.172.178.45:8000/">übersicht über Demo-Instanzen</a></li>
-      </ul>
-      <li><a href="https://staging.sse.uni-hildesheim.de:9011/api">Comptence-Repository (SEARCH)</a></li>
-      <ul>
-        <li><a href="https://github.com/orgs/e-Learning-by-SSE/packages/npm/package/competence_repository_search_api">SEARCH Swagger Client</a></li>
-        <li><a href="https://staging.sse.uni-hildesheim.de:9013/">Search UI</a></li>
-      </ul>
+      <li><a href="https://staging.sse.uni-hildesheim.de/selflearn">Self-Learning Demo-System</a>
+        <ul>
+          <li><a href="http://147.172.178.30:1001/login">MinIO Console (nur im SSE-Netz)</a></li>
+          <li><a href="http://147.172.178.45:8000/">PR-Demo-Instanzen Übersicht</a></li>
+        </ul>
+      </li>
+      <li><a href="https://staging.sse.uni-hildesheim.de:9011/api">Competence-Repository (SEARCH)</a>
+        <ul>
+          <li><a href="https://github.com/orgs/e-Learning-by-SSE/packages/npm/package/competence_repository_search_api">Swagger-Client</a></li>
+          <li><a href="https://staging.sse.uni-hildesheim.de:9013/">Search UI</a></li>
+        </ul>
+      </li>
     </ul>
-    <h3>Explain</h3>
+
+    <!-- Explain -->
+    <h2>Explain</h2>
     <ul>
-      <li><a href="https://staging.sse.uni-hildesheim.de:9050/api">Explain Feedback-Prototype</a></li>
+      <li><a href="https://staging.sse.uni-hildesheim.de:9050/api">Explain Feedback-Prototyp</a></li>
     </ul>
-    <h3>StudentManagement</h3>
-      <ul>
+
+    <!-- Student Management -->
+    <h2>Student Management</h2>
+    <ul>
       <li><a href="/WEB-APP/">STU Client</a></li>
       <li><a href="http://147.172.178.30:9032/api">STU Backend API</a></li>
       <li><a href="http://147.172.178.30:8080/swagger-ui/index.html?configUrl=/v3/api-docs/swagger-config">Sparky-Service (Legacy)</a></li>
       <li><a href="/WEB-IDE/">STU Web-IDE</a></li>
-      <li><a href="http://147.172.178.30:9020/">ISML Concept Maps Recommender (Swagger UI)</a></li>
-      <li><a href="http://147.172.178.30:8080/stmgmt/api/">Backend via Sparky-Service</a></li>
-      <li><a href="http://147.172.178.30/svn/java-abgaben/">Test Hausaufgaben Repository</a></li>
+      <li><a href="http://147.172.178.30:9020/">ISML Concept Maps Recommender</a></li>
+      <li><a href="http://147.172.178.30:8080/stmgmt/api/">Backend über Sparky-Service</a></li>
+      <li><a href="http://147.172.178.30/svn/java-abgaben/">Test Hausaufgaben-Repository</a></li>
     </ul>
-    <h3>SEARCH</h3>
+
+    <!-- SEARCH Dienste -->
+    <h2>Weitere SEARCH Dienste</h2>
     <ul>
       <li><a href="https://staging.sse.uni-hildesheim.de:9040/l3s-gateway">L3S Gateway</a></li>
       <li><a href="https://staging.sse.uni-hildesheim.de:9041/l3s-aimeta">AI META Service</a></li>
       <li><a href="https://staging.sse.uni-hildesheim.de:9042/l3s-recsys">RecSys</a></li>
-      <li><a href="https://staging.sse.uni-hildesheim.de:9043/l3s-search">Search-Service</a></li>
+      <li><a href="https://staging.sse.uni-hildesheim.de:9043/l3s-search">Search Service</a></li>
     </ul>
-    <h3>Infrastruktur </h3>
+
+    <!-- Infrastruktur -->
+    <h2>Infrastruktur (Staging)</h2>
     <ul>
-      <li><a href="https://staging.sse.uni-hildesheim.de:8443">Keycloak Management Interface</a></li>
-      <li><a href="https://staging.sse.uni-hildesheim.de:3080/REGISTRY/"> Registry Dashboard</li>
-      <li><a href="https://staging.sse.uni-hildesheim.de:3080/actuator/gateway/routes"> Gateway Routes</li>
-      <li><a href="https://staging.sse.uni-hildesheim.de:8443/realms/UniHi/.well-known/openid-configuration"> Auth OIDC Konfigurationsseite (nur RZ-Kennungen) </li>
-      <li><a href="https://staging.sse.uni-hildesheim.de:8443/realms/SelfLearning/.well-known/openid-configuration"> Auth OIDC Konfigurationsseite (SelfLearning) </li>
+      <li><a href="https://staging.sse.uni-hildesheim.de:8443">Keycloak Management</a></li>
+      <li><a href="https://staging.sse.uni-hildesheim.de:3080/REGISTRY/">Registry Dashboard</a></li>
+      <li><a href="https://staging.sse.uni-hildesheim.de:3080/actuator/gateway/routes">Gateway Routen</a></li>
+      <li><a href="https://staging.sse.uni-hildesheim.de:8443/realms/UniHi/.well-known/openid-configuration">OIDC Config (UniHi Realm)</a></li>
+      <li><a href="https://staging.sse.uni-hildesheim.de:8443/realms/SelfLearning/.well-known/openid-configuration">OIDC Config (SelfLearning Realm)</a></li>
     </ul>
   </body>
 </html>
