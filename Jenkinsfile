@@ -5,7 +5,7 @@ pipeline {
     stages {
         stage("Main deploy") {
             steps {
-                staging01ssh 'git --git-dir=/var/www/html2/.git --work-tree=/var/www/html2/ pull'
+                staging01ssh 'git --git-dir=/var/www/infrastructure-staging-website/.git --work-tree=/var/www/infrastructure-staging-website/ pull'
             }
         }
     }
