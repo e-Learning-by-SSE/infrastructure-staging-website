@@ -37,6 +37,7 @@
     <ul>
       <li><a href="https://staging.sse.uni-hildesheim.de/selflearn">Self-Learning Demo-System</a>
         <ul>
+          <li><a href="https://staging.sse.uni-hildesheim.de/selflearn-docs/">Deutsche/Englische Online-Hilfe</a></li>
           <li><a href="http://147.172.178.30:1001/login">MinIO Console (nur im SSE-Netz)</a></li>
           <li><a href="http://147.172.178.45:8000/">PR-Demo-Instanzen Übersicht</a></li>
         </ul>
